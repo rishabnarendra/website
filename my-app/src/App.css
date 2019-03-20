@@ -23,6 +23,56 @@
   color: #61dafb;
 }
 
+.WebsiteTopics{
+	background-color: #015761;
+	position: absolute;
+	left: 0px;
+	width: 50%;
+	height:100%;
+}
+
+.MyName{
+  color: #f2d94f;
+  font-size: 20px;
+  text-indent: 50px;
+  margin-top: 50px;
+}
+
+.Introduction{
+  padding-left: 150px;
+  margin-top: 150px;
+}
+
+.Intro{
+  color: #f2d94f;
+  font-size: 40px;
+}
+
+.BiggerMyName{
+  color: #fff;
+  font-size: 100px;
+}
+
+.SmallerMyName{
+  line-height: normal;
+ 	color: #fff;
+}
+
+.Tabs{
+  text-indent: 50px;
+  display: flex;
+}
+
+.TabLinks{
+ 	background: none; 
+ 	border: none; 
+ 	color: #fff;
+}
+
+ .TabLinks:hover { 
+  color: yellow;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
