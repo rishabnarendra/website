@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
@@ -23,12 +27,23 @@
   color: #61dafb;
 }
 
+/*CSS for website tabs and intro*/
+
 .WebsiteTopics{
 	background-color: #015761;
-	position: absolute;
-	left: 0px;
-	width: 50%;
 	height:100%;
+}
+
+.Grid{
+  display: grid;
+}
+
+.LeftSide{
+  grid-column: 1;
+}
+
+.RightSide{
+  grid-column: 2;
 }
 
 .MyName{
@@ -71,6 +86,58 @@
 
  .TabLinks:hover { 
   color: yellow;
+}
+
+.sidenav {
+  width: 40px;
+  position: fixed;
+  float: right;
+  z-index: 1;
+  top: 50%;
+  right: 0px;
+  background: rgba(247, 220, 79, 1);;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+/*CSS for image*/
+
+.MyImage{
+  float: right; 
+}
+
+/*CSS for about me*/
+
+.About{
+  color: #19666F;
+  text-align: center;
+  font-size: 48px;
+}
+
+.Description{
+  text-align: center;
+  padding: 0px 350px 0px 350px;
+  font-weight: 300;
+  font-size: normal;
+}
+
+.Summary{
+  padding: 50px 0px 50px 0px;
+  background-color: #f1f0f0;
+  text-align: center;
+}
+
+.Resume{  
+  background-color: rgba(247, 220, 79, 1);
+  border: solid rgba(153, 153, 151, 1) 0px; 
+  color: #53835b;
+  font-size: 15px; 
+  padding: 10px 26px;
+}
+
+.Resume:hover{
+  background-color: #015761;
+  color: rgba(247, 220, 79, 1);
 }
 
 @keyframes App-logo-spin {
