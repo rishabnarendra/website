@@ -138,6 +138,30 @@ html{
   color: rgba(247, 220, 79, 1);
 }
 
+/*CSS for work*/
+
+.Work{
+  color: #19666F;
+  text-align: center;
+  font-size: 48px;
+}
+
+/*CSS for projects*/
+
+.Projects{
+  color: #19666F;
+  text-align: center;
+  font-size: 48px;
+}
+
+/*CSS for languages*/
+
+.Languages{
+  color: #19666F;
+  text-align: center;
+  font-size: 48px;
+}
+
 /*CSS for contact*/
 
 .Contact{

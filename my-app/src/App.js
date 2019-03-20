@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Image from './components/image'; 
 import About from './components/about';
+import Work from './components/work';
+import Projects from './components/projects';
+import Languages from './components/languages';
 import Contact from './components/contact';  
 import { SocialIcon } from 'react-social-icons';
 
@@ -60,6 +63,9 @@ class App extends Component {
       </div> 
 
       <About />
+      <Work />
+      <Projects />
+      <Languages />
       <Contact />
       </div>
     );
