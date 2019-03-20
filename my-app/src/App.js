@@ -17,6 +17,30 @@ class App extends Component {
     });
   }
 
+  ScrollToWork(){
+    window.scroll({
+    top: 2500, 
+    left: 0, 
+    behavior: 'smooth'
+    });
+  }
+
+  ScrollToProjects(){
+    window.scroll({
+    top: 2500, 
+    left: 0, 
+    behavior: 'smooth'
+    });
+  }
+
+  ScrollToLanguages(){
+    window.scroll({
+    top: 2500, 
+    left: 0, 
+    behavior: 'smooth'
+    });
+  }
+
   ScrollToContact(){
     window.scroll({
     top: 2500, 
@@ -36,9 +60,9 @@ class App extends Component {
 
               <div class="Tabs">
                 <p class="TabLinks" onClick={() => this.ScrollToBio()}>Bio</p>
-                <p class="TabLinks">Work</p>
-                <p class="TabLinks">Projects</p>
-                <p class="TabLinks">Languages</p>
+                <p class="TabLinks" onClick={() => this.ScrollToWork()}>Work</p>
+                <p class="TabLinks" onClick={() => this.ScrollToProjects()}>Projects</p>
+                <p class="TabLinks" onClick={() => this.ScrollToLanguages()}>Languages</p>
                 <p class="TabLinks" onClick={() => this.ScrollToContact()}>Contact</p>
               </div>
 
