@@ -88,16 +88,14 @@ html{
   color: yellow;
 }
 
-.sidenav {
+.Sidenav {
   width: 40px;
   position: fixed;
   float: right;
-  z-index: 1;
-  top: 50%;
+  top: 30%;
   right: 0px;
-  background: rgba(247, 220, 79, 1);;
+  background: rgba(247, 220, 79, 1);
   overflow-x: hidden;
-  padding: 8px 0;
 }
 
 /*CSS for image*/
@@ -138,6 +136,19 @@ html{
 .Resume:hover{
   background-color: #015761;
   color: rgba(247, 220, 79, 1);
+}
+
+/*CSS for contact*/
+
+.Contact{
+  color: rgba(247, 220, 79, 1);
+  text-align: center;
+  font-size: 48px;
+}
+
+.Question{
+  text-align: center;
+  color: #fff;
 }
 
 @keyframes App-logo-spin {

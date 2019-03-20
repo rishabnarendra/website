@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
 import Image from './components/image'; 
-import About from './components/about'; 
+import About from './components/about';
+import Contact from './components/contact';  
+import { SocialIcon } from 'react-social-icons';
 
 class App extends Component {
   ScrollToBio(){
+    window.scroll({
+    top: 2500, 
+    left: 0, 
+    behavior: 'smooth'
+    });
+  }
+
+  ScrollToContact(){
     window.scroll({
     top: 2500, 
     left: 0, 
@@ -26,7 +36,7 @@ class App extends Component {
                 <p class="TabLinks">Work</p>
                 <p class="TabLinks">Projects</p>
                 <p class="TabLinks">Languages</p>
-                <p class="TabLinks">Contact</p>
+                <p class="TabLinks" onClick={() => this.ScrollToContact()}>Contact</p>
               </div>
 
               <div class="Introduction">
@@ -42,13 +52,15 @@ class App extends Component {
           </div>
         </div>  
 
-<div class="sidenav">
-<a href="#about"></a>
-<a href="#services"></a>
-<a href="#clients"></a>
-<a href="#contact"></a>
-</div> 
-        <About />
+      <div class="Sidenav">
+        <SocialIcon url="https://www.linkedin.com/in/rishab-narendra-965b04168/" fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+        <SocialIcon url="https://github.com/rishabnarendra" fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+        <SocialIcon url="https://www.instagram.com/rishabnarendra/?hl=en" fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+        <SocialIcon url="https://www.facebook.com/rishab.narendra.7" fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+      </div> 
+
+      <About />
+      <Contact />
       </div>
     );
   }
