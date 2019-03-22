@@ -235,13 +235,38 @@ html{
   font-size: 48px;
 }
 
-.Question{
-  text-align: center;
-  color: #fff;
+.Label{
+  font-size: 16px;
+  position: absolute;
+  transform-origin: top left;
+  transform: translate(-80px, 0px) scale(1);
+  transition: all .1s ease-in-out;
 }
 
-.ContactForm{
-  background-color: #338ec6;
+.ContactInput{
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #adadad;
+  padding: 2px 5px;
+  width: 40%;
+  outline: none;
+}
+
+.ContactInput:focus{
+  border-bottom: 2px solid rgba(247, 220, 79, 1);;
+}
+
+.Submit{  
+  background-color: rgba(247, 220, 79, 1);
+  border: solid rgba(153, 153, 151, 1) 0px; 
+  color: #53835b;
+  font-size: 15px; 
+  padding: 10px 26px;
+}
+
+.Submit:hover{
+  background-color: #015761;
+  color: rgba(247, 220, 79, 1);
 }
 
 /*CSS for footer*/
