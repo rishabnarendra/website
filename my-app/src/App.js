@@ -87,10 +87,18 @@ class App extends Component {
       </div> 
 
       <About />
+      <hr></hr>
       <Work />
+      <hr></hr>
       <Projects />
+      <hr></hr>
       <Languages />
+      <hr></hr>
       <Contact />
+      <footer>
+        {'\u00A9'} 2019 by Rishab Narendra. Proudly created with React.  
+        <br></br><br></br>
+      </footer>
       </div>
     );
   }

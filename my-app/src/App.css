@@ -162,10 +162,75 @@ html{
   font-size: 48px;
 }
 
+.Progress {
+  background-color: black;
+  border-radius: 13px;
+  padding: 3px;
+  width: 40%;
+  margin-left: auto; 
+  margin-right:auto;
+}
+
+.Bar {
+  background-color: orange;
+  width: 90%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.Bar1 {
+  background-color: orange;
+  width: 80%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.Bar2 {
+  background-color: orange;
+  width: 85%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.Bar3 {
+  background-color: orange;
+  width: 85%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.Bar4 {
+  background-color: orange;
+  width: 70%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.Bar5 {
+  background-color: orange;
+  width: 90%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.Bar6 {
+  background-color: orange;
+  width: 90%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.Bar7 {
+  background-color: orange;
+  width: 90%;
+  height: 20px;
+  border-radius: 10px;
+}
+
 /*CSS for contact*/
 
 .Contact{
-  color: rgba(247, 220, 79, 1);
+  color: #19666F;
   text-align: center;
   font-size: 48px;
 }
@@ -173,6 +238,19 @@ html{
 .Question{
   text-align: center;
   color: #fff;
+}
+
+.ContactForm{
+  background-color: #338ec6;
+}
+
+/*CSS for footer*/
+
+footer{
+  text-align: center;
+  background-color: #f1f0f0;
+  font-weight: 300;
+  font-size: 0.9em;
 }
 
 @keyframes App-logo-spin {
