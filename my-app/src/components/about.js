@@ -1,9 +1,10 @@
 import React, { Component } from 'react'; 
+import MyResume from './Rishab_Narendra.Resume.pdf';
 
 class about extends Component{
 
-    test(){
-        alert('works');
+    openResume(){
+        window.open(MyResume);
     }
 
     render(){
@@ -21,7 +22,7 @@ class about extends Component{
                 </p>
 
                 <br></br>
-                <button class="Resume" onClick={() => this.test()}>View Full Resume</button>
+                <button class="Resume" onClick={() => this.openResume()}>View Full Resume</button>
             </div>
         );
     }
