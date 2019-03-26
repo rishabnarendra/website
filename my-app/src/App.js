@@ -49,6 +49,22 @@ class App extends Component {
     });
   }
 
+  openLinkedIn(){
+    window.open("https://www.linkedin.com/in/rishab-narendra-965b04168");
+  }
+
+  openGitHub(){
+    window.open("https://github.com/rishabnarendra");
+  }
+
+  openInstagram(){
+    window.open("https://www.instagram.com/rishabnarendra/?hl=en");
+  }
+
+  openFacebook(){
+    window.open("https://www.facebook.com/rishab.narendra.7");
+  }
+
   render() {
     return (
       <div class="WebsiteTopics">
@@ -80,10 +96,10 @@ class App extends Component {
         </div>  
 
       <div class="Sidenav">
-        <SocialIcon url="https://www.linkedin.com/in/rishab-narendra-965b04168/" fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
-        <SocialIcon url="https://github.com/rishabnarendra" fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
-        <SocialIcon url="https://www.instagram.com/rishabnarendra/?hl=en" fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
-        <SocialIcon url="https://www.facebook.com/rishab.narendra.7" fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+        <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+        <SocialIcon network="github" onClick={() => this.openGitHub()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+        <SocialIcon network="instagram" onClick={() => this.openInstagram()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+        <SocialIcon network="facebook" onClick={() => this.openFacebook()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
       </div> 
 
       <About />
