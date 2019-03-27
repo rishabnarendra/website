@@ -5,45 +5,94 @@ class languages extends Component{
         return(
             <div class="Summary">
                 <h1 class="Languages">Languages</h1> 
-                <p>Java</p>
-                <div class="Progress">
-                    <div class="Bar"></div>
-                </div> 
+                <div class="ProgressBars">
+                    <div class="LeftProgressBars">
+                    <h4>HTML</h4>
+                    <div class="ProgressCircle p95">
+                        <span>95%</span>
+                        <div class="LeftHalf">
+                            <div class="FirstHalf"></div>
+                            <div class="ValueBar"></div>
+                        </div>
+                    </div>
 
-                <p>C/C++</p>
-                <div class="Progress">
-                    <div class="Bar1"></div>
-                </div> 
+                    <h4>CSS</h4>
+                    <div class="ProgressCircle p95">
+                        <span>95%</span>
+                        <div class="LeftHalf">
+                            <div class="FirstHalf"></div>
+                            <div class="ValueBar"></div>
+                        </div>
+                    </div>
 
-                <p>Python</p>
-                <div class="Progress">
-                    <div class="Bar2"></div>
+                    <h4>JavaScript</h4>
+                    <div class="ProgressCircle p95">
+                        <span>95%</span>
+                        <div class="LeftHalf">
+                            <div class="FirstHalf"></div>
+                            <div class="ValueBar"></div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="CenterProgressBars">
+                    <h4>Java</h4>
+                    <div class="ProgressCircle p90">
+                        <span>90%</span>
+                        <div class="LeftHalf">
+                            <div class="FirstHalf"></div>
+                            <div class="ValueBar"></div>
+                        </div>
+                    </div>
+
+                    <h4>C/C++</h4>
+                    <div class="ProgressCircle p90">
+                        <span>90%</span>
+                        <div class="LeftHalf">
+                            <div class="FirstHalf"></div>
+                            <div class="ValueBar"></div>
+                        </div>
+                    </div>
+
+                    <h4>C#</h4>
+                    <div class="ProgressCircle p90">
+                        <span>90%</span>
+                        <div class="LeftHalf">
+                            <div class="FirstHalf"></div>
+                            <div class="ValueBar"></div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="RightProgressBars">
+                    <h4>Python</h4>
+                    <div class="ProgressCircle p85">
+                        <span>85%</span>
+                        <div class="LeftHalf">
+                            <div class="FirstHalf"></div>
+                            <div class="ValueBar"></div>
+                        </div>
+                    </div>
+
+                    <h4>SQL</h4>
+                    <div class="ProgressCircle p85">
+                        <span>85%</span>
+                        <div class="LeftHalf">
+                            <div class="FirstHalf"></div>
+                            <div class="ValueBar"></div>
+                        </div>
+                    </div>
+
+                    <h4>GIT</h4>
+                    <div class="ProgressCircle p85">
+                        <span>85%</span>
+                        <div class="LeftHalf">
+                            <div class="FirstHalf"></div>
+                            <div class="ValueBar"></div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-
-                <p>C#</p>
-                <div class="Progress">
-                    <div class="Bar3"></div>
-                </div>
-
-                <p>HTML</p>
-                <div class="Progress">
-                    <div class="Bar4"></div>
-                </div> 
-
-                <p>CSS</p>
-                <div class="Progress">
-                    <div class="Bar5"></div>
-                </div> 
-
-                <p>JavaScript/TypeScript</p>
-                <div class="Progress">
-                    <div class="Bar6"></div>
-                </div>   
-
-                <p>SQL</p>
-                <div class="Progress">
-                    <div class="Bar7"></div>
-                </div>          
             </div>
         );
     }

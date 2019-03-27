@@ -166,69 +166,90 @@ html{
   font-size: 48px;
 }
 
-.Progress {
-  background-color: black;
-  border-radius: 13px;
-  padding: 3px;
-  width: 40%;
-  margin-left: auto; 
-  margin-right:auto;
+.ProgressCircle {
+  font-size: 20px;
+  margin: 20px;
+  position: relative; 
+  padding: 0;
+  width: 5em;
+  height: 5em;
+  background-color: #F2E9E1; 
+  border-radius: 50%;
+  line-height: 5em;
 }
 
-.Bar {
-  background-color: orange;
-  width: 90%;
-  height: 20px;
-  border-radius: 10px;
+.ProgressCircle:after{
+   border: none;
+   position: absolute;
+   top: 0.35em;
+   left: 0.35em;
+   text-align: center;
+   display: block;
+   border-radius: 50%;
+   width: 4.3em;
+   height: 4.3em;
+   background-color: white;
+   content: " ";
 }
 
-.Bar1 {
-  background-color: orange;
-  width: 80%;
-  height: 20px;
-  border-radius: 10px;
+.ProgressCircle span {
+   position: absolute;
+   line-height: 5em;
+   width: 5em;
+   text-align: center;
+   display: block;
+   color: #53777A;
+   z-index: 2;
+}
+.LeftHalf { 
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  position: absolute; 
+  clip: rect(0, 5em, 5em, 2.5em);  
 }
 
-.Bar2 {
-  background-color: orange;
-  width: 85%;
-  height: 20px;
-  border-radius: 10px;
+.ProgressCircle .LeftHalf {
+  clip: rect(auto,auto,auto,auto);
+}
+.ValueBar {
+  position: absolute;
+  clip: rect(0, 2.5em, 5em, 0);
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 0.45em solid #53777A; 
+  box-sizing: border-box;
+ 
+}
+.ProgressCircle .FirstHalf {
+  position: absolute; 
+  clip: rect(0, 5em, 5em, 2.5em);
+  background-color: #53777A;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
 }
 
-.Bar3 {
-  background-color: orange;
-  width: 85%;
-  height: 20px;
-  border-radius: 10px;
+.ProgressCircle.p85 .ValueBar { transform: rotate(306deg); }
+.ProgressCircle.p90 .ValueBar { transform: rotate(324deg); }
+.ProgressCircle.p95 .ValueBar { transform: rotate(342deg); }
+
+.LeftProgressBars{
+  float:left;
 }
 
-.Bar4 {
-  background-color: orange;
-  width: 70%;
-  height: 20px;
-  border-radius: 10px;
+.CenterProgressBars{
+  display: inline-block;
+  text-align: center;
 }
 
-.Bar5 {
-  background-color: orange;
-  width: 90%;
-  height: 20px;
-  border-radius: 10px;
+.RightProgressBars{
+  float:right;
 }
 
-.Bar6 {
-  background-color: orange;
-  width: 90%;
-  height: 20px;
-  border-radius: 10px;
-}
-
-.Bar7 {
-  background-color: orange;
-  width: 90%;
-  height: 20px;
-  border-radius: 10px;
+.ProgressBars{
+  padding: 0 350px 0 350px;
 }
 
 /*CSS for contact*/
