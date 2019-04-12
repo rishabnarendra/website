@@ -111,10 +111,6 @@ class App extends Component {
       <Languages />
       <hr></hr>
       <Contact />
-      <footer>
-        {'\u00A9'} 2019 by Rishab Narendra. Proudly created with React.  
-        <br></br><br></br>
-      </footer>
       </div>
     );
   }

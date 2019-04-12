@@ -23,6 +23,11 @@ class contact extends Component{
                     <textarea class="ContactInput" name="message" spellcheck="false"></textarea>
                     <br></br><br></br>
                     <button class="Submit" onClick={() => this.test()}>Send Message</button>
+                    <br></br><br></br>
+                    <footer>
+                        {'\u00A9'} 2019 by Rishab Narendra. Proudly created with React.  
+                        <br></br><br></br>
+                    </footer>
                 </form>
             </div>
         );
