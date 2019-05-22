@@ -150,6 +150,11 @@ html{
   font-size: 48px;
 }
 
+.Dates{
+  font-weight: normal;
+  color: 	#080808;
+}
+
 /*CSS for projects*/
 
 .Projects{
