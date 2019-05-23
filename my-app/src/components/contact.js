@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class contact extends Component{
     test(){
-        alert('works');
+        alert('Message Sent');
     }
 
     render(){
