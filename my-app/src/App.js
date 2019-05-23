@@ -11,7 +11,7 @@ import { SocialIcon } from 'react-social-icons';
 class App extends Component {
   ScrollToBio(){
     window.scroll({
-    top: 2500, 
+    top: 725, 
     left: 0, 
     behavior: 'smooth'
     });
@@ -19,7 +19,7 @@ class App extends Component {
 
   ScrollToWork(){
     window.scroll({
-    top: 2500, 
+    top: 1487, 
     left: 0, 
     behavior: 'smooth'
     });
@@ -27,7 +27,7 @@ class App extends Component {
 
   ScrollToProjects(){
     window.scroll({
-    top: 2500, 
+    top: 2665, 
     left: 0, 
     behavior: 'smooth'
     });
@@ -35,7 +35,7 @@ class App extends Component {
 
   ScrollToLanguages(){
     window.scroll({
-    top: 2500, 
+    top: 3160, 
     left: 0, 
     behavior: 'smooth'
     });
@@ -43,7 +43,7 @@ class App extends Component {
 
   ScrollToContact(){
     window.scroll({
-    top: 2500, 
+    top: 4000, 
     left: 0, 
     behavior: 'smooth'
     });
