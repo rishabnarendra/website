@@ -9,28 +9,39 @@ import Contact from './components/contact';
 import { SocialIcon } from 'react-social-icons';
 
 class App extends Component {
+
   ScrollToBio(){
     window.scroll({
-    top: 725, 
+    top: 0, 
     left: 0, 
     behavior: 'smooth'
     });
+  }
+
+  getWorkRef = el => {
+    this.sectionRef = el;
   }
 
   ScrollToWork(){
-    window.scroll({
-    top: 1487, 
-    left: 0, 
-    behavior: 'smooth'
-    });
+    if (this.sectionRef) {
+      window.scrollTo({
+        top: this.sectionRef.offsetTop,
+        behavior: 'smooth',
+      });
+    }
   }
 
-  ScrollToProjects(){
-    window.scroll({
-    top: 2665, 
-    left: 0, 
-    behavior: 'smooth'
-    });
+  getProjectsRef = el => {
+    this.sectionRef = el;
+  }
+
+  ScrollToProjects = e => {
+    if (this.sectionRef) {
+      window.scrollTo({
+        top: this.Work.offsetTop,
+        behavior: 'smooth',
+      });
+    }
   }
 
   ScrollToLanguages(){
@@ -50,7 +61,7 @@ class App extends Component {
   }
 
   openLinkedIn(){
-    window.open("https://www.linkedin.com/in/rishab-narendra-965b04168");
+    window.open("https://www.linkedin.com/in/rishab-narendra/");
   }
 
   openGitHub(){
@@ -68,7 +79,6 @@ class App extends Component {
   render() {
     return (
       <div class="WebsiteTopics">
-        <div class="Grid">
           <div class="LeftSide">
               <div class="MyName">
                 Rishab Narendra
@@ -81,36 +91,30 @@ class App extends Component {
                 <p class="TabLinks" onClick={() => this.ScrollToLanguages()}>Languages</p>
                 <p class="TabLinks" onClick={() => this.ScrollToContact()}>Contact</p>
               </div>
-
-              <div class="Introduction">
-                <span class="Intro">Hey, I'm <br></br></span>
-                <span class="BiggerMyName">Rishab <br></br></span>
-                <span class="BiggerMyName"> Narendra <br></br></span>
-                <span class="SmallerMyName">Iowa State University / Computer Science</span>
-              </div>
           </div>
 
-          <div class="RightSide">
+          {/* <div class="RightSide">
             <Image />
-          </div>
-        </div>  
+          </div> */}
 
-      <div class="Sidenav">
-        <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
-        <SocialIcon network="github" onClick={() => this.openGitHub()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
-        <SocialIcon network="instagram" onClick={() => this.openInstagram()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
-        <SocialIcon network="facebook" onClick={() => this.openFacebook()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
-      </div> 
+        <div class="Sidenav">
+          <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+          <SocialIcon network="github" onClick={() => this.openGitHub()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+          <SocialIcon network="instagram" onClick={() => this.openInstagram()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+          <SocialIcon network="facebook" onClick={() => this.openFacebook()} fgColor="#000" bgColor="rgba(247, 220, 79, 1)"/>
+        </div> 
 
-      <About />
-      <hr></hr>
-      <Work />
-      <hr></hr>
-      <Projects />
-      <hr></hr>
-      <Languages />
-      <hr></hr>
-      <Contact />
+        <About />
+        <hr></hr>
+        <section ref={this.getWorkRef}></section>
+        <Work />
+        <hr></hr>
+        <section ref={this.getProjectsRef}></section>
+        <Projects />
+        <hr></hr>
+        <Languages />
+        <hr></hr>
+        <Contact />
       </div>
     );
   }

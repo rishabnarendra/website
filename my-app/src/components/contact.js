@@ -9,6 +9,7 @@ class contact extends Component{
         return(
             <div class="Summary">
                 <h1 class="Contact">Contact Me</h1>
+                <br></br>
                 <form class="ContactForm">
                     <label class="Label">NAME</label>
                     <input type="text" class="ContactInput" size="100"></input>

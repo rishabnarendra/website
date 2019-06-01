@@ -6,79 +6,26 @@ html{
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 /*CSS for website tabs and intro*/
 
 .WebsiteTopics{
-	background-color: #015761;
-	height:100%;
-}
-
-.Grid{
-  display: grid;
-}
-
-.LeftSide{
-  grid-column: 1;
-}
-
-.RightSide{
-  grid-column: 2;
+  background-color: #015761;
+  overflow-x: hidden;
 }
 
 .MyName{
   color: #f2d94f;
   font-size: 20px;
-  text-indent: 50px;
-  margin-top: 50px;
-}
-
-.Introduction{
-  padding-left: 150px;
-  margin-top: 150px;
-}
-
-.Intro{
-  color: #f2d94f;
-  font-size: 40px;
-}
-
-.BiggerMyName{
-  color: #fff;
-  font-size: 100px;
-}
-
-.SmallerMyName{
-  line-height: normal;
- 	color: #fff;
+  text-indent: 4%;
+  margin-top: 7%;
 }
 
 .Tabs{
-  text-indent: 50px;
   display: flex;
 }
 
 .TabLinks{
+  padding-left: 4%;
  	background: none; 
  	border: none; 
  	color: #fff;
@@ -92,10 +39,16 @@ html{
   width: 40px;
   position: fixed;
   float: right;
-  top: 30%;
+  top: 20%;
   right: 0px;
   background: rgba(247, 220, 79, 1);
   overflow-x: hidden;
+}
+
+.Column{
+  display: inline-table;
+  padding: 0 10% 0 10%;
+  width: auto;
 }
 
 /*CSS for image*/
@@ -107,6 +60,8 @@ html{
 /*CSS for about me*/
 
 .About{
+  margin: 0 !important;
+  padding: 0 !important;
   color: #19666F;
   text-align: center;
   font-size: 48px;
@@ -114,7 +69,7 @@ html{
 
 .Description{
   text-align: center;
-  padding: 0px 350px 0px 350px;
+  padding: 0px 10% 0px 10%;
   font-weight: 300;
   font-size: normal;
 }
@@ -145,6 +100,8 @@ html{
 /*CSS for work*/
 
 .Work{
+  margin: 0 !important;
+  padding: 0 !important;
   color: #19666F;
   text-align: center;
   font-size: 48px;
@@ -158,6 +115,8 @@ html{
 /*CSS for projects*/
 
 .Projects{
+  margin: 0 !important;
+  padding: 0 !important;
   color: #19666F;
   text-align: center;
   font-size: 48px;
@@ -166,6 +125,8 @@ html{
 /*CSS for languages*/
 
 .Languages{
+  margin: 0 !important;
+  padding: 0 !important;
   color: #19666F;
   text-align: center;
   font-size: 48px;
@@ -180,7 +141,6 @@ html{
   height: 5em;
   background-color: #F2E9E1; 
   border-radius: 50%;
-  line-height: 5em;
 }
 
 .ProgressCircle:after{
@@ -201,7 +161,6 @@ html{
    position: absolute;
    line-height: 5em;
    width: 5em;
-   text-align: center;
    display: block;
    color: #53777A;
    z-index: 2;
@@ -240,26 +199,17 @@ html{
 .ProgressCircle.p90 .ValueBar { transform: rotate(324deg); }
 .ProgressCircle.p95 .ValueBar { transform: rotate(342deg); }
 
-.LeftProgressBars{
-  float:left;
-}
-
-.CenterProgressBars{
-  display: inline-block;
-  text-align: center;
-}
-
-.RightProgressBars{
-  float:right;
-}
-
-.ProgressBars{
-  padding: 0 350px 0 350px;
+.Column {
+  display: inline-table;
+  padding: 0 10% 0 10%;
+  width: auto;
 }
 
 /*CSS for contact*/
 
 .Contact{
+  margin: 0 !important;
+  padding: 0 !important;
   color: #19666F;
   text-align: center;
   font-size: 48px;
@@ -306,6 +256,12 @@ footer{
   background-color: #f1f0f0;
   font-weight: 300;
   font-size: 0.9em;
+}
+
+/*CSS for lines(hr)*/
+
+hr {
+  margin: 0.1em; 
 }
 
 @keyframes App-logo-spin {
